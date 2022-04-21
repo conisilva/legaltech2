@@ -83,9 +83,9 @@
 							<h3 class="thin text-center">Registrar nueva cuenta</h3>
 							<p class="text-center text-muted">Si ya posee una cuenta, solo debe <a href="signin.html">Iniciar sesión</a> De lo contrario, debe registrarse. </p>
 							<hr>
-							
+							{% csrf_token %}
 							<form method="post">
-								{% csrf_token %}
+								
 								<div class="top-margin">
 									<label>Nombres</label>
 									{{form.username}}
